@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../external/bootstrap.css">
+    <link rel="stylesheet" href="w-clr-btn.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="clientApp">
+    <div class="container" ng-init="input='I am Batman!'">
+      <input w-clr-btn type="text" class="form-control" ng-model="input">
+      <p class="text-center">{{input}}</p>
+    </div>
+
+  <!-- external stuff -->
+  <script src="../external/angular.js"></script>
+
+  <!-- angular stuff -->
+  <script src="w-clr-btn.js"></script>
+
+  <script>
+  angular.module('clientApp', ['wClrBtn']);
+  </script>
+</body>
+</html>

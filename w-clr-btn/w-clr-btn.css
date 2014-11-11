@@ -1,0 +1,25 @@
+input[w-clr-btn] {
+  padding-right:35px;
+}
+
+input[w-clr-btn] ~ .close-icon {
+  background: salmon;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 1;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;  
+  cursor: pointer;
+}
+
+input[w-clr-btn] ~ .close-icon:before{
+  content: "X";
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  font-size: 13px;
+  display:block;
+}
